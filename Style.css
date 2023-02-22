@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Inter;
+  text-decoration: none;
+  /* width: 100%;
+  height: 100%; */
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.menu__list {
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.wrapper {
+  display: flex;
+  /* flex-direction: column; */
+}
+.menu {
+  margin: 2.68rem;
+}
+.menu__list {
+  display: flex;
+  column-gap: 5rem;
+  flex-wrap: wrap;
+}
+.menu__link {
+  color: black;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+}
+.main-block {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* Расположим объекты в колонку друг под другом */
+  flex-direction: column;
+}
+.main-block__img {
+  position: absolute;
+
+  /* У родителя установлены размеры через VW и VH,
+  дочерний контейнер пусть просто ориентируется на
+  родителя – меняем на % */
+  width: 100%;
+  height: 100%;
+
+  /* !!! Это свойство нужно дать самому IMG, а не его
+  контейнеру */
+  /* object-fit: cover; */
+
+  z-index: -1;
+
+  /* top: 0;
+  left: 0; */
+}
+
+/* Обращаемся к IMG внутри класса .main-block__img */
+.main-block__img img {
+  /* Помимо object-fit также нужно дать
+  размеры относительно родителя */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-block {
+  width: 100vw;
+  display: flex;
+}
+
+.main-block__text {
+  padding: 10rem 0 0 2.68rem;
+  flex-direction: column;
+}
+.main-block__text__title {
+  font-family: Lora;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7.6875rem;
+  letter-spacing: 0.2em;
+}
+.main-block__text__text {
+  font-family: Lora;
+  font-size: 3.875rem;
+  font-weight: 700;
+  color: #f4f845;
+  line-height: 5rem;
+}
+
+.main-block__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 80px;
+  /* НЕ ПРИМЕНЯЕТСЯ, забыт знак решётки */
+  color: #000;
+  background-color: #f4f845;
+
+  /* align-self: flex-end; */
+  /* Расположим по центру экрана по горизонтали */
+  align-self: center;
+
+  /* Чтобы кнопка отталкивалась от верха и уходила вниз, 
+  используем старый трюк с margin */
+  margin-top: auto;
+  margin-bottom: 120px;
+  padding: bottom 7.5em;
+  border-radius: 3.75em;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.875em;
+  border: none;
+}
+.main-block__button:hover {
+  background-color: #e4e906;
+}
+.services {
+  background-color: #efefef;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  margin: 0;
+}
+.services__text {
+  padding: 10rem 0 0 2.68rem;
+  flex-direction: column;
+}
+.services__text__title {
+  font-family: Lora;
+  font-size: 3.875rem;
+  font-weight: normal;
+  line-height: 5rem;
+  margin-bottom: 1.5rem;
+}
+.services__text__text {
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 3.75rem;
+}
+.services__cards {
+  margin-top: 3.375em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 1280px;
+}
+.services__cards__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* width: 25%; */
+}
+.services__img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+.services__cards__item__footer {
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+.services__cards__item__footer__text {
+  margin-right: 1.12rem;
+}
+.footer {
+}
