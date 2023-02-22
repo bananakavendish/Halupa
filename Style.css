@@ -18,8 +18,7 @@ header {
   top: 0;
 }
 
-.menu__list {
-}
+
 a {
   text-decoration: none;
 }
@@ -182,6 +181,4 @@ li {
 }
 .services__cards__item__footer__text {
   margin-right: 1.12rem;
-}
-.footer {
 }
