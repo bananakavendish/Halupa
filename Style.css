@@ -18,6 +18,28 @@ header {
   top: 0;
 }
 
+/* Добавил универсальный див-обёртку в HTML,
+теперь стилизуем его. Использовать будем внутри
+каждого section*/
+.container {
+  /* Ширину взял из твоего макета */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.68rem;
+}
+
+.section__title {
+  font-family: Lora;
+  font-size: 3.875rem;
+  font-weight: normal;
+  line-height: 5rem;
+}
+.section__subtitle {
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 3.75rem;
+}
 
 a {
   text-decoration: none;
@@ -28,7 +50,7 @@ li {
 }
 .wrapper {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 .menu {
   margin: 2.68rem;
@@ -43,13 +65,22 @@ li {
   line-height: 1.125rem;
   font-size: 0.875rem;
 }
+
+.main section {
+  padding-top: 80px;
+}
+.main section:first-child {
+  padding-top: 0;
+}
+
 .main-block {
   width: 100vw;
   height: 100vh;
   display: flex;
-  /* Расположим объекты в колонку друг под другом */
+  /* Расположим объекты в коноку друг под другом */
   flex-direction: column;
 }
+
 .main-block__img {
   position: absolute;
 
@@ -109,7 +140,7 @@ li {
   width: 400px;
   height: 80px;
   /* НЕ ПРИМЕНЯЕТСЯ, забыт знак решётки */
-  color: #000;
+  color: 000;
   background-color: #f4f845;
 
   /* align-self: flex-end; */
@@ -122,7 +153,7 @@ li {
   margin-bottom: 120px;
   padding: bottom 7.5em;
   border-radius: 3.75em;
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 1.5em;
@@ -134,50 +165,41 @@ li {
 }
 .services {
   background-color: #efefef;
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
+  width: 100%;
+
   margin: 0;
 }
-.services__text {
-  padding: 10rem 0 0 2.68rem;
-  flex-direction: column;
-}
-.services__text__title {
-  font-family: Lora;
-  font-size: 3.875rem;
-  font-weight: normal;
-  line-height: 5rem;
+
+.services__title {
   margin-bottom: 1.5rem;
 }
-.services__text__text {
-  font-family: Inter;
-  font-size: 2.5rem;
-  font-weight: normal;
-  line-height: 3.75rem;
-}
+
 .services__cards {
   margin-top: 3.375em;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-width: 1280px;
+  /* min-width: 1280px; */
 }
 .services__cards__item {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* width: 25%; */
+  width: 320px;
+  height: 480px;
 }
 .services__img {
-  width: 25%;
+  height: 100%;
+}
+.services__img img {
   height: 100%;
   object-fit: cover;
 }
 .services__cards__item__footer {
-  width: 100%;
   display: flex;
   position: absolute;
+  bottom: 0;
+  padding: 1rem;
 }
 .services__cards__item__footer__text {
   margin-right: 1.12rem;
