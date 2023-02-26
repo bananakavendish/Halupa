@@ -204,3 +204,42 @@ li {
 .services__cards__item__footer__text {
   margin-right: 1.12rem;
 }
+.catalog {
+  background-color: #efefef;
+  width: 100%;
+  margin: 0;
+}
+.catalog__cards {
+  margin-top: 3.375em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalog__img {
+  height: 100%;
+}
+.catalog__img img {
+  height: 100%;
+  object-fit: cover;
+}
+.catalog__cards__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 640px;
+  height: 460px;
+}
+.catalog__cards__item__info {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  flex-direction: column;
+}
+.catalog__card__item__header {
+  background-color: #ffffff;
+  display: flex;
+  margin: 0.75rem;
+  padding: 0.75rem 0.875rem;
+  border-radius: 1.25rem;
+}
