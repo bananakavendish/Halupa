@@ -123,7 +123,7 @@ li {
   font-size: 6rem;
   font-weight: 700;
   line-height: 7.6875rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 .main-block__text__text {
   font-family: Lora;
@@ -151,12 +151,12 @@ li {
   используем старый трюк с margin */
   margin-top: auto;
   margin-bottom: 120px;
-  padding: bottom 7.5em;
-  border-radius: 3.75em;
+  padding: bottom 7.5rem;
+  border-radius: 3.75rem;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.875em;
   border: none;
 }
@@ -175,7 +175,7 @@ li {
 }
 
 .services__cards {
-  margin-top: 3.375em;
+  margin-top: 3.375rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -210,7 +210,7 @@ li {
   margin: 0;
 }
 .catalog__cards {
-  margin-top: 3.375em;
+  margin-top: 3.375rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -220,6 +220,7 @@ li {
 }
 .catalog__img img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .catalog__cards__item {
@@ -233,13 +234,25 @@ li {
   display: flex;
   position: absolute;
   bottom: 0;
-  padding: 1rem;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
+
 .catalog__card__item__header {
-  background-color: #ffffff;
   display: flex;
-  margin: 0.75rem;
+  margin: 1.5rem 0.75rem;
+}
+.catalog__cards__item__header p {
+  background-color: #ffffff;
   padding: 0.75rem 0.875rem;
   border-radius: 1.25rem;
+}
+.catalog__card__item__footer {
+  font-family: inter;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f4f846;
+  margin: 1rem;
 }
