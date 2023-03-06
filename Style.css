@@ -261,9 +261,12 @@ li {
 }
 .send {
   display: flex;
-  position: relative;
+  /* position: relative; */
   justify-content: flex-end;
   background-color: #efefef;
+}
+.send .container {
+  position: relative;
 }
 .form {
   width: 100%;
