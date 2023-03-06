@@ -204,18 +204,29 @@ li {
   margin-right: 1.12rem;
 }
 .about-company {
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   position: relative;
   display: flex;
   flex-direction: column;
 }
+.about-company__block {
+}
+.about-company__title {
+}
+
 .about-company__text {
   font-family: Inter;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
 }
 .about-company__text:first-child {
-  width: 370px;
+  width: 100%;
+}
+.about-company__text:last-child {
+  width: 120%;
 }
 .about-company__img {
   position: absolute;
