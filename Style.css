@@ -383,3 +383,16 @@ li {
 .slider .slick-dots li.slick-active button {
   background-color: #f4f846;
 }
+.interior__title {
+  font-size: 3.875rem;
+  font-weight: 700;
+  font-family: lora;
+  margin-bottom: 1rem;
+}
+.interior__text {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: inter;
+  margin-bottom: 2.5rem;
+  width: 49.875rem;
+}
