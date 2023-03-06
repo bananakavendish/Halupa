@@ -26,6 +26,7 @@ header {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2.68rem;
+  width: 100%;
 }
 
 .section__title {
@@ -261,8 +262,7 @@ li {
 }
 .send {
   display: flex;
-  /* position: relative; */
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   background-color: #efefef;
 }
 .send .container {
@@ -270,7 +270,11 @@ li {
 }
 .form {
   width: 100%;
-  max-width: 640px;
+  /* max-width: 640px; */
+}
+.form__body {
+  display: flex;
+  justify-content: flex-end;
 }
 .form__block {
   display: flex;
@@ -290,9 +294,12 @@ li {
 .form__input {
   width: 30rem;
   border-width: 0px 0px 1px 0px;
-  background-color: #efefef;
+  background-color: transparent;
   border-color: #585050;
+  height: 2rem;
 }
+
+
 .form__button {
   width: 25rem;
   height: 5rem;
