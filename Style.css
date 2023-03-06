@@ -27,6 +27,7 @@ header {
   margin: 0 auto;
   padding: 0 2.68rem;
   background-color: green;
+  width: 100%;
 }
 
 .section__title {
