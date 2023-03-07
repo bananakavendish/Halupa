@@ -210,7 +210,15 @@ li {
   display: flex;
   flex-direction: column;
 }
+.about-company__block container {
+  position: relative;
+}
 .about-company__block {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .about-company__title {
 }
@@ -220,13 +228,14 @@ li {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  max-width: 370px;
+  max-width: 418px;
+  /* padding: 1.5rem 0rem; */
 }
-.about-company__text:first-child {
-  width: 100%;
+.about-company__textp p:first-child {
+  width: 89%;
 }
-.about-company__text:last-child {
-  width: 120%;
+.about-company__text p:last-child {
+  width: 115%;
 }
 .about-company__img {
   position: absolute;
