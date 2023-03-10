@@ -54,7 +54,7 @@ li {
   flex-direction: column;
 }
 .menu {
-  margin: 2.68rem;
+  margin-top: 2.68rem;
 }
 .menu__list {
   display: flex;
@@ -116,7 +116,7 @@ li {
 }
 
 .main-block__text {
-  padding: 10rem 0 0 2.68rem;
+  padding-top: 10rem;
   flex-direction: column;
 }
 .main-block__text__title {
