@@ -124,7 +124,7 @@ li {
   font-size: 6rem;
   font-weight: 700;
   line-height: 7.6875rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 .main-block__text__text {
   font-family: Lora;
@@ -138,10 +138,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 80px;
-  /* НЕ ПРИМЕНЯЕТСЯ, забыт знак решётки */
-  color: 000;
+  padding: 1.626rem 5.625rem;
+
   background-color: #f4f845;
 
   /* align-self: flex-end; */
@@ -152,12 +150,12 @@ li {
   используем старый трюк с margin */
   margin-top: auto;
   margin-bottom: 120px;
-  padding: bottom 7.5em;
-  border-radius: 3.75em;
+  padding: bottom 7.5rem;
+  border-radius: 3.75rem;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.875em;
   border: none;
 }
@@ -175,11 +173,10 @@ li {
 }
 
 .services__cards {
-  margin-top: 3.375em;
+  margin-top: 3.375rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* min-width: 1280px; */
 }
 .services__cards__item {
   display: flex;
@@ -202,7 +199,75 @@ li {
   padding: 1rem;
 }
 .services__cards__item__footer__text {
-  margin-right: 1.12rem;
+  font-family: inter;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #efefef;
+}
+.services__cards__item__footer__button {
+  padding: 0.75rem 1.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #f4f846;
+  background-color: transparent;
+  border: 1px solid #f4f846;
+  border-radius: 20px;
+}
+
+.catalog {
+  background-color: #efefef;
+  width: 100%;
+  margin: 0;
+}
+.catalog__cards {
+  margin-top: 3.375rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalog__img {
+  height: 100%;
+}
+.catalog__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.catalog__cards__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 640px;
+  height: 460px;
+}
+.catalog__cards__item__info {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.catalog__card__item__header {
+  display: flex;
+  margin: 1.5rem 0.75rem;
+}
+.catalog__card__item__header p {
+  background-color: #ffffff;
+  padding: 0.75rem 0.875rem;
+  border-radius: 1.25rem;
+  margin-right: 0.75rem;
+}
+.catalog__card__item__footer {
+  margin: 1rem;
+}
+.catalog__card__item__footer a {
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f4f846;
 }
 .main .about-company {
   padding-top: 0;
