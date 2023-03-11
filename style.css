@@ -47,7 +47,7 @@ li {
   flex-direction: column;
 }
 .menu {
-  margin: 2.68rem;
+  margin-top: 2.68rem;
 }
 .menu__list {
   display: flex;
@@ -96,7 +96,6 @@ li {
   height: 100%;
   z-index: -1;
 }
-
 .main-block__img img {
   width: 100%;
   height: 100%;
@@ -109,7 +108,7 @@ li {
 }
 
 .main-block__text {
-  padding: 10rem 0 0 2.68rem;
+  padding-top: 10rem;
   flex-direction: column;
 }
 .main-block__text__title {
@@ -300,10 +299,121 @@ li {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  }
+  
+.footer {
+  margin-top: 5rem;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  font-family: lora;
+  font-size: 3.875rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+}
+.footer__contacts a {
+  color: black;
+}
+.footer__social {
+  display: flex;
+  column-gap: 2.5rem;
+  margin: 3rem 0rem 3.5rem 0rem;
+}
+.slider__item {
+  text-align: center;
+  width: 480px;
+  height: 294px;
+}
+.slider__item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider {
+  position: relative;
+  padding: 0px 40px;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  font-size: 0;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  width: 30px;
+  height: 30px;
+  color: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-top: 8px solid #f4f846;
+  border-right: 8px solid #f4f846;
+  transform: rotate(-135deg);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-top: 8px solid #f4f846;
+  border-right: 8px solid #f4f846;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.25rem 0rem;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  border: none;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: #f4f846;
+}
+.interior__title {
+  font-size: 3.875rem;
+  font-weight: 700;
+  font-family: lora;
+  margin-bottom: 1rem;
+}
+.interior__text {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: inter;
+  margin-bottom: 2.5rem;
+  width: 49.875rem;
 }
 .main .about-company {
   padding-top: 0;
 }
+
 .about-company {
   margin: 0;
   position: relative;
@@ -317,7 +427,6 @@ li {
   row-gap: 24px;
   padding-top: 0px;
 }
-
 .about-company__text {
   font-family: Inter;
   font-size: 1rem;

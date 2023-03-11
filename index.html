@@ -17,7 +17,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <nav class="header__menu menu">
+        <nav class="header__menu menu container">
           <ul class="menu__list">
             <li class="menu__item">
               <a href="" class="menu__link">Главная</a>
@@ -45,7 +45,7 @@
           <div class="main-block__img">
             <img src="./img/Main_img.png" alt="House on the field" />
           </div>
-          <div class="main-block__text">
+          <div class="main-block__text container">
             <h1 class="main-block__text__title">Halupa</h1>
             <h2 class="main-block__text__text">Дом мечты в паре кликов</h2>
           </div>
@@ -73,7 +73,9 @@
                   <p class="services__cards__item__footer__text">
                     Продажа вашей недвижимости
                   </p>
-                  <button class="services__cards__item__footer__button">Подробнее</button>
+                  <button class="services__cards__item__footer__button">
+                    Подробнее
+                  </button>
                 </div>
               </div>
               <div class="services__cards__item">
@@ -87,7 +89,9 @@
                   <p class="services__cards__item__footer__text">
                     Продажа вторичной недвижимости
                   </p>
-                  <button class="services__cards__item__footer__button">Подробнее</button>
+                  <button class="services__cards__item__footer__button">
+                    Подробнее
+                  </button>
                 </div>
               </div>
               <div class="services__cards__item">
@@ -101,7 +105,9 @@
                   <p class="services__cards__item__footer__text">
                     Покупка вторичной недвижимости
                   </p>
-                  <button class="services__cards__item__footer__button">Подробнее</button>
+                  <button class="services__cards__item__footer__button">
+                    Подробнее
+                  </button>
                 </div>
               </div>
               <div class="services__cards__item">
@@ -115,7 +121,9 @@
                   <p class="services__cards__item__footer__text">
                     Помощь в выборе интерьера
                   </p>
-                  <button class="services__cards__item__footer__button">Подробнее</button>
+                  <button class="services__cards__item__footer__button">
+                    Подробнее
+                  </button>
                 </div>
               </div>
             </div>
@@ -243,8 +251,26 @@
           </div>
         </section>
 
-        <section class="interior">
-          <h2>Интерьеры</h2>
+        <section class="interior container">
+          <h2 class="interior__title">Интерьеры</h2>
+          <p class="interior__text">Поможем в грамотном выборе интерьеров</p>
+          <div class="slider">
+            <div class="slider__item">
+              <img src="./img/1_slider.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/2_slider.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/3_slider.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/1_slider.png" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./img/2_slider.png" alt="" />
+            </div>
+          </div>
         </section>
         <section class="send">
           <div class="container">
@@ -283,7 +309,34 @@
           </div>
         </section>
       </main>
-      <footer class="footer">Футер</footer>
+      <footer class="footer">
+        <div class="container">
+          <h2 class="footer__title">Контакты</h2>
+          <div class="footer__contacts">
+            <a href="tel:+79952827070">+7 (995) 282-70-70</a>
+            <a href="mailto:hello@halupa.com">hello@halupa.com</a>
+          </div>
+          <div>
+            <ul class="footer__social">
+              <li>
+                <a href="#"><img src="./img/Whatsapp.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/Instagram.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/Facebook.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- Подключаю JQery -->
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+      <!-- Подключаю slick.min.js  -->
+      <script src="./js/slick.min.js"></script>
+      <!-- Подключаю script.js -->
+      <script src="./js/script.js"></script>
     </div>
   </body>
 </html>
