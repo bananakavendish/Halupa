@@ -15,7 +15,6 @@ header {
   position: absolute;
   top: 0;
 }
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -62,10 +61,26 @@ li {
 }
 
 .main section {
-  padding-top: 80px;
+  padding-top: 5rem;
 }
 .main section:first-child {
   padding-top: 0;
+}
+.button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.626rem 5.625rem;
+  background-color: #f4f845;
+  align-self: center;
+  border-radius: 3.75rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.875em;
+  border: none;
+  cursor: pointer;
 }
 
 .main-block {
@@ -112,22 +127,9 @@ li {
 }
 
 .main-block__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.626rem 5.625rem;
-  background-color: #f4f845;
-  align-self: center;
   margin-top: auto;
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
   padding: bottom 7.5rem;
-  border-radius: 3.75rem;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.875em;
-  border: none;
 }
 .main-block__button:hover {
   background-color: #e4e906;
@@ -239,6 +241,66 @@ li {
   font-weight: 700;
   color: #f4f846;
 }
+.send {
+  display: flex;
+  background-color: #efefef;
+}
+.send .container {
+  position: relative;
+}
+.form {
+  width: 100%;
+}
+.form__body {
+  display: flex;
+  justify-content: flex-end;
+}
+.form__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+  margin-bottom: 2.375rem;
+}
+
+.form__title {
+  font-family: inter;
+  font-size: 2.5rem;
+  font-weight: 400;
+  width: 40rem;
+  text-align: center;
+}
+.form__input {
+  width: 30rem;
+  border-width: 0px 0px 1px 0px;
+  background-color: transparent;
+  border-color: #585050;
+  height: 2rem;
+}
+
+.form__button {
+  width: 25rem;
+  height: 5rem;
+  background-color: #f4f846;
+  border-radius: 3.75rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.send__img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 480px;
+}
+
+.send__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  }
+  
 .footer {
   margin-top: 5rem;
 }
