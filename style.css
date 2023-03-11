@@ -5,8 +5,6 @@
 body {
   font-family: Inter;
   text-decoration: none;
-  /* width: 100%;
-  height: 100%; */
   margin: 0;
   padding: 0;
 }
@@ -17,12 +15,7 @@ header {
   position: absolute;
   top: 0;
 }
-
-/* Добавил универсальный див-обёртку в HTML,
-теперь стилизуем его. Использовать будем внутри
-каждого section*/
 .container {
-  /* Ширину взял из твоего макета */
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2.68rem;
@@ -68,43 +61,43 @@ li {
 }
 
 .main section {
-  padding-top: 80px;
+  padding-top: 5rem;
 }
 .main section:first-child {
   padding-top: 0;
+}
+.button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.626rem 5.625rem;
+  background-color: #f4f845;
+  align-self: center;
+  border-radius: 3.75rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.875em;
+  border: none;
+  cursor: pointer;
 }
 
 .main-block {
   width: 100vw;
   height: 100vh;
   display: flex;
-  /* Расположим объекты в коноку друг под другом */
   flex-direction: column;
 }
 
 .main-block__img {
   position: absolute;
-
-  /* У родителя установлены размеры через VW и VH,
-  дочерний контейнер пусть просто ориентируется на
-  родителя – меняем на % */
   width: 100%;
   height: 100%;
-
-  /* !!! Это свойство нужно дать самому IMG, а не его
-  контейнеру */
-  /* object-fit: cover; */
-
   z-index: -1;
-
-  /* top: 0;
-  left: 0; */
 }
 
-/* Обращаемся к IMG внутри класса .main-block__img */
 .main-block__img img {
-  /* Помимо object-fit также нужно дать
-  размеры относительно родителя */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -135,29 +128,9 @@ li {
 }
 
 .main-block__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.626rem 5.625rem;
-
-  background-color: #f4f845;
-
-  /* align-self: flex-end; */
-  /* Расположим по центру экрана по горизонтали */
-  align-self: center;
-
-  /* Чтобы кнопка отталкивалась от верха и уходила вниз, 
-  используем старый трюк с margin */
   margin-top: auto;
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
   padding: bottom 7.5rem;
-  border-radius: 3.75rem;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.875em;
-  border: none;
 }
 .main-block__button:hover {
   background-color: #e4e906;
@@ -271,7 +244,6 @@ li {
 }
 .send {
   display: flex;
-  /* justify-content: flex-end; */
   background-color: #efefef;
 }
 .send .container {
@@ -279,7 +251,6 @@ li {
 }
 .form {
   width: 100%;
-  /* max-width: 640px; */
 }
 .form__body {
   display: flex;
@@ -308,7 +279,6 @@ li {
   height: 2rem;
 }
 
-
 .form__button {
   width: 25rem;
   height: 5rem;
@@ -335,7 +305,6 @@ li {
   padding-top: 0;
 }
 .about-company {
-  /* width: 100%; */
   margin: 0;
   position: relative;
   display: flex;
@@ -356,7 +325,6 @@ li {
   flex-direction: column;
   max-width: 418px;
   row-gap: 24px;
-  /* padding: 1.5rem 0rem; */
 }
 .about-company__textp p:first-child {
   width: 89%;
