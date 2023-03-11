@@ -239,7 +239,27 @@ li {
   font-weight: 700;
   color: #f4f846;
 }
-
+.footer {
+  margin-top: 5rem;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  font-family: lora;
+  font-size: 3.875rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+}
+.footer__contacts a {
+  color: black;
+}
+.footer__social {
+  display: flex;
+  column-gap: 2.5rem;
+  margin: 3rem 0rem 3.5rem 0rem;
+}
 .slider__item {
   text-align: center;
   width: 480px;
@@ -331,6 +351,7 @@ li {
 .main .about-company {
   padding-top: 0;
 }
+
 .about-company {
   margin: 0;
   position: relative;
