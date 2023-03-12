@@ -80,7 +80,10 @@ li {
   font-size: 1.5rem;
   line-height: 1.875em;
   border: none;
-  cursor: pointer;
+  cursor: url("./img/cursor.png"), auto;
+}
+.button-primary:hover {
+  background-color: #e4e906;
 }
 
 .main-block {
@@ -129,11 +132,8 @@ li {
 .main-block__button {
   margin-top: auto;
   margin-bottom: 7.5rem;
-  padding: bottom 7.5rem;
 }
-.main-block__button:hover {
-  background-color: #e4e906;
-}
+
 .services {
   background-color: #efefef;
   width: 100%;
@@ -244,6 +244,7 @@ li {
 .send {
   display: flex;
   background-color: #efefef;
+  margin-top: 12rem;
 }
 .send .container {
   position: relative;
@@ -276,8 +277,12 @@ li {
   background-color: transparent;
   border-color: #585050;
   height: 2rem;
+  padding: 0.5rem;
 }
-
+.form__input:focus {
+  outline: 1px solid blue;
+  border: none;
+}
 .form__button {
   width: 25rem;
   height: 5rem;
@@ -294,13 +299,12 @@ li {
   bottom: 0;
   max-width: 480px;
 }
-
 .send__img img {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  }
-  
+}
+
 .footer {
   margin-top: 5rem;
 }
@@ -419,6 +423,7 @@ li {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
 }
 
 .about-company__block {
@@ -456,7 +461,7 @@ li {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1.8rem;
 }
 
 .about-company__numbers__item {
