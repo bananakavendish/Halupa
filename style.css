@@ -20,6 +20,7 @@ header {
   margin: 0 auto;
   padding: 0 2.68rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .section__title {
@@ -87,7 +88,8 @@ li {
 }
 
 .main-block {
-  width: 100vw;
+  /* div по умолчанию занимает всю ширину родителя, поэтому задавать так ширину тут не нужно */
+  /* width: 100vw; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -95,6 +97,8 @@ li {
 
 .main-block__img {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -105,13 +109,15 @@ li {
   object-fit: cover;
 }
 
-.main-block {
+/*  Дубликат класса */
+/* .main-block {
   width: 100vw;
   display: flex;
-}
+} */
 
 .main-block__text {
   padding-top: 10rem;
+  /* flex-direction не действует, если у элемента нет display: flex */
   flex-direction: column;
 }
 .main-block__text__title {
@@ -268,11 +274,21 @@ li {
   font-family: inter;
   font-size: 2.5rem;
   font-weight: 400;
-  width: 40rem;
+  /* Просто width тут лучше заменить на max-width, иначе при уменьшении экрана текст будет мешать всему контенту */
+  /* width: 40rem; */
+  width: 100%;
+  max-width: 40rem;
   text-align: center;
 }
+
+.form__item {
+  width: 100%;
+  max-width: 30rem;
+}
+
 .form__input {
-  width: 30rem;
+  /* Здесь лучше просто растянуть инпут на всю ширину, а родителю (.form__item) дать max-width*/
+  width: 100%;
   border-width: 0px 0px 1px 0px;
   background-color: transparent;
   border-color: #585050;
@@ -359,7 +375,8 @@ li {
   left: 0;
   width: 30px;
   height: 30px;
-  color: none;
+  /* Недействительное значение для color – такие вещи можно проверять в инструментах разработчика в Хром, как обсуждали */
+  /* color: none; */
   border: none;
   background-color: rgba(0, 0, 0, 0);
   border-top: 8px solid #f4f846;
@@ -412,7 +429,10 @@ li {
   font-weight: 400;
   font-family: inter;
   margin-bottom: 2.5rem;
-  width: 49.875rem;
+  /* Просто width тут лучше заменить на max-width, иначе при уменьшении экрана текст будет мешать всему контенту */
+  /* width: 49.875rem; */
+  width: 100%;
+  max-width: 49.875rem;
 }
 .main .about-company {
   padding-top: 0;
