@@ -16,7 +16,7 @@ header {
   top: 0;
 }
 .container {
-  max-width: 1280px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 2.68rem;
   width: 100%;
@@ -86,10 +86,17 @@ li {
 .button-primary:hover {
   background-color: #e4e906;
 }
+.button__secondary {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #f4f846;
+  background-color: transparent;
+  border: 1px solid #f4f846;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
 .main-block {
-  /* div по умолчанию занимает всю ширину родителя, поэтому задавать так ширину тут не нужно */
-  /* width: 100vw; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -109,16 +116,8 @@ li {
   object-fit: cover;
 }
 
-/*  Дубликат класса */
-/* .main-block {
-  width: 100vw;
-  display: flex;
-} */
-
 .main-block__text {
   padding-top: 10rem;
-  /* flex-direction не действует, если у элемента нет display: flex */
-  flex-direction: column;
 }
 .main-block__text__title {
   font-family: Lora;
@@ -184,12 +183,6 @@ li {
 }
 .services__cards__item__footer__button {
   padding: 0.75rem 1.625rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #f4f846;
-  background-color: transparent;
-  border: 1px solid #f4f846;
-  border-radius: 20px;
 }
 
 .catalog {
@@ -375,8 +368,6 @@ li {
   left: 0;
   width: 30px;
   height: 30px;
-  /* Недействительное значение для color – такие вещи можно проверять в инструментах разработчика в Хром, как обсуждали */
-  /* color: none; */
   border: none;
   background-color: rgba(0, 0, 0, 0);
   border-top: 8px solid #f4f846;
@@ -429,8 +420,6 @@ li {
   font-weight: 400;
   font-family: inter;
   margin-bottom: 2.5rem;
-  /* Просто width тут лучше заменить на max-width, иначе при уменьшении экрана текст будет мешать всему контенту */
-  /* width: 49.875rem; */
   width: 100%;
   max-width: 49.875rem;
 }
